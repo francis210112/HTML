@@ -1,0 +1,20 @@
+
+.fondo1 {
+    background-image: url("imagen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.titulo {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    color: tomato;
+}
+
+.link {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    color: gold;
+    text-decoration: none; 
+}
