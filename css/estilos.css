@@ -18,3 +18,14 @@
     color: purple;
     text-decoration: none; 
 }
+
+.curved-img {
+  border-radius: 15px;         /* rounds the corners */
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* adds soft shadow */
+  transition: 0.3s;            /* smooth hover animation */
+}
+
+.curved-img:hover {
+  transform: scale(1.05);      /* enlarges slightly on hover */
+  cursor: pointer;             /* shows pointer like a button */
+}
