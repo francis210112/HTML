@@ -19,3 +19,12 @@
   padding: 10px;
   text-align: center;
 }
+
+/*Propiedades para la seccion*/
+.section {
+    width: 100%; 
+    height: 400px; 
+    background-color: darkmagenta; 
+    border-radius: 5px; 
+    padding: 10px;
+}
