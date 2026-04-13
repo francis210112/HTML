@@ -43,3 +43,45 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/* Propiedades y efectos de barra de menu y botones */
+ul, ol { /*Propiedades de las etiqyetas ul y ol*/
+    list-style-type: none; font-family: "sans-serif"; font-size: 20px;
+}
+
+.nav { /*Propiedades de la clase nav para la barra de menu*/
+    width: 500px; /*espacio para los botones*/
+    margin: 0 auto; /*centrar botones*/
+}
+
+.nav > li { /*creacion de subcase para efectos de botones*/
+    float: center; /*alinear botones al centro*/
+}
+
+.nav li a { /*Propiedades de los hipervinculos <3 href="">*/
+    background-color: black; color: white;
+    text-decoration: none; padding: 18px 12px; display: block;
+}
+
+.nav li a:hover { /*efectos transicion de color*/
+    background-color: black;
+}
+
+.nav li  ul { /*Propiedades de los botones*/
+    display: none;
+    position: absolute;
+    min-height: 140px;
+}
+
+.nav li:hover > ul { /*Efectos de los botones para transicion*/
+    display: block;
+}
+
+.nav li ul li { /*Efectos sobre los botones al pasar el mouse*/
+    position: relative;
+}
+
+.nav li ul li ul { /*Alineacion de los textos en los botones y efectos*/
+    right: -140px; top: 0px;
+}
+
