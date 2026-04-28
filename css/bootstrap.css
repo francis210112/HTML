@@ -3820,6 +3820,11 @@ textarea.form-control-lg {
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;             /* ensures it stays centered */
+  padding: 0;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;

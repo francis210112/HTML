@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,127 +7,208 @@
     <link rel="stylesheet" type="text/css" href="../css/estructura.css">
     <title>South Korea</title>
 </head>
-
-
 <body>
-    <div class="container">
-        <header class="header">
-            South Korea
+    <div class="container page-shell">
+        <header class="hero">
+            <p class="eyebrow">East Asia</p>
+            <h1>South Korea</h1>
+            <p class="hero-text">
+                A visual overview of South Korea's technology, culture, and global influence.
+            </p>
         </header>
 
-
-        <div class="menu">
-            <ul class="nav">
-                <li>
-                    <a href="#" class="btn btn-primary">Tecnologia</a>
-                    <ul>
-                        <li><a href="#" class="btn btn-primary">Samsung RAM</a></li>
-                        <li><a href="#" class="btn btn-primary">Samsung Electronics</a></li>
-                        <li><a href="#" class="btn btn-primary">LG Technology</a></li>
-                        <li><a href="#" class="btn btn-primary">SK Hynix</a></li>
+        <nav class="menu" aria-label="Main topics">
+            <ul class="main-nav">
+                <li class="nav-item">
+                    <a href="#" class="menu-link menu-link--tech">Technology</a>
+                    <ul class="submenu">
+                        <li><a href="#">Samsung RAM</a></li>
+                        <li><a href="#">Samsung Electronics</a></li>
+                        <li><a href="#">LG Technology</a></li>
+                        <li><a href="#">SK Hynix</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" class="btn btn-warning">Empresas</a>
-                    <ul>
-                        <li><a href="#" class="btn btn-warning">Hyundai</a></li>
-                        <li><a href="#" class="btn btn-warning">Kia</a></li>
-                        <li><a href="#" class="btn btn-warning">Samsung Group</a></li>
-                        <li><a href="#" class="btn btn-warning">LG Group</a></li>
+                <li class="nav-item">
+                    <a href="#" class="menu-link menu-link--business">Companies</a>
+                    <ul class="submenu">
+                        <li><a href="#">Hyundai</a></li>
+                        <li><a href="#">Kia</a></li>
+                        <li><a href="#">Samsung Group</a></li>
+                        <li><a href="#">LG Group</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" class="btn btn-danger">Successful brands</a>
-                    <ul>
-                        <li><a href="#" class="btn btn-danger">HMS Hyundai motor sport</a></li>
-                        <li><a href="#" class="btn btn-danger">Samsung electronics</a></li>
+                <li class="nav-item">
+                    <a href="#" class="menu-link menu-link--brands">Successful brands</a>
+                    <ul class="submenu">
+                        <li><a href="#">Hyundai Motorsport</a></li>
+                        <li><a href="#">Samsung Electronics</a></li>
+                        <li><a href="#">K-beauty</a></li>
                     </ul>
                 </li>
             </ul>
-        </div>
+        </nav>
 
-
-        <section class="section">
-            <br>
-            <h1>What is South Korea?</h1>
-<br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 style="border: 2px solid plum;">Where is it located?</h3>
-                    <p align="justify">
-                        - Continent: Asia <br>
-                        - Region: Eastern Asia <br>
-                        - Borders: <br>
-                        * North: North Korea (Demilitarized Zone separates them) <br>
-                        * West: Yellow Sea (towards China) <br>
-                        * East: Sea of Japan (called East Sea in Korea, towards Japan)
-                    </p>
-                    <img src="../pictures/map.gif" width="300" height="400" alt="Korea">
+        <main>
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="section-label">Overview</p>
+                    <h2>What is South Korea?</h2>
                 </div>
-<br>
-                <div class="col-sm-8">
-                    <h3 style="border: 2px solid blue;">What is the capital of South Korea?</h3>
-                    <div class="row">
-                        <div class="col-sm-8">
+
+                <div class="row g-4">
+                    <article class="col-sm-4">
+                        <div class="info-card">
+                            <h3 class="card-title accent-red">Where is it located?</h3>
+                            <ul class="info-list">
+                                <li><strong>Continent:</strong> Asia.</li>
+                                <li><strong>Region:</strong> East Asia.</li>
+                                <li><strong>North:</strong> North Korea, separated by the Demilitarized Zone.</li>
+                                <li><strong>West:</strong> The Yellow Sea, toward China.</li>
+                                <li><strong>East:</strong> The Sea of Japan, also called the East Sea in Korea.</li>
+                            </ul>
+
+                            <figure class="media-frame tall-frame">
+                                <img src="../pictures/map.gif" alt="Map of South Korea">
+                            </figure>
                         </div>
-                            <p align="justify">
-                                Seoul — Capital of South Korea <br>
-                                Seoul, officially known as the Seoul Special Metropolitan City, is the capital of South Korea and one of the largest urban centers in the world. 
-                                Located in the northwestern part of the country along the Han River, it combines tradition with modern innovation, making it a global hub for 
-                                politics, culture, and technology. <br>
-                                - Population: Around 10 million in the city, over 25 million in the metropolitan area <br>
-                                - Role: Seat of government, home to the president, National Assembly, and Supreme Court <br>
-                                - Economy: Headquarters of major corporations such as Samsung, LG, and Hyundai <br>
-                                - Culture: World-famous for K-pop, Korean drama, and fashion trends <br>
-                                - Landmarks: Historic palaces like Gyeongbokgung, modern icons like Lotte World Tower, and vibrant districts such as Gangnam and Hongdae <br>
-                                Seoul’s unique character lies in its ability to preserve centuries-old heritage while driving cutting-edge innovation. From bustling markets 
-                                and traditional temples to skyscrapers and high-tech infrastructure, the city reflects South Korea’s rise as a cultural and economic powerhouse.
+                    </article>
+
+                    <article class="col-sm-8">
+                        <div class="info-card feature-card">
+                            <h3 class="card-title accent-blue">What is its capital?</h3>
+                            <p class="lead-text">
+                                Seoul is the capital of South Korea and one of the largest urban centers in the world.
+                                It combines tradition with modern innovation, making it a global hub for politics,
+                                culture, and technology.
                             </p>
-                            <br>
-                            <div style="text-align: center;">
-                                <img src="../pictures/Seoul.jpg" width="400" height="300" alt="Korea">
+
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <span class="stat-label">Population</span>
+                                    <span class="stat-value">Around 10 million people in the city.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Metropolitan area</span>
+                                    <span class="stat-value">More than 25 million residents.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Government</span>
+                                    <span class="stat-value">Seat of the president, National Assembly, and Supreme Court.</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Economy</span>
+                                    <span class="stat-value">Headquarters of major companies such as Samsung, LG, and Hyundai.</span>
+                                </div>
                             </div>
+
+                            <p>
+                                Located along the Han River, Seoul stands out for its historic palaces, modern landmarks,
+                                and vibrant districts. Places like Gyeongbokgung, Lotte World Tower, Gangnam, and Hongdae
+                                show how the city preserves its heritage while driving new global trends.
+                            </p>
+
+                            <figure class="media-frame wide-frame">
+                                <img src="../pictures/Seoul.jpg" alt="View of Seoul">
+                                <figcaption>Seoul brings together heritage, technology, and urban life in one landscape.</figcaption>
+                            </figure>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="row g-4">
+                    <article class="col-sm-8">
+                        <div class="info-card">
+                            <h3 class="card-title accent-red">Culture</h3>
+                            <p>
+                                South Korea preserves a rich cultural heritage that includes traditional clothing,
+                                ceremonies, festivals, and performing arts. These traditions continue to thrive
+                                alongside modern industries such as cinema, fashion, and K-pop.
+                            </p>
+
+                            <div class="culture-grid">
+                                <div class="mini-card">
+                                    <h4>Hanbok</h4>
+                                    <p>
+                                        The hanbok is Korea's traditional clothing, known for its bright colors,
+                                        elegant lines, and use during holidays and special celebrations.
+                                    </p>
+                                </div>
+                                <div class="mini-card">
+                                    <h4>Traditional dances</h4>
+                                    <p>
+                                        Performances such as Buchaechum, Talchum, and Samgomu combine movement,
+                                        rhythm, storytelling, and strong visual symbolism.
+                                    </p>
+                                </div>
+                                <div class="mini-card">
+                                    <h4>Music</h4>
+                                    <p>
+                                        Instruments such as the gayageum, janggu, and haegeum accompany dances,
+                                        ceremonies, and traditional cultural performances.
+                                    </p>
+                                </div>
+                                <div class="mini-card">
+                                    <h4>Festivals</h4>
+                                    <p>
+                                        Seollal and Chuseok bring families together through traditional food,
+                                        ancestral respect, and folk games.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="col-sm-4">
+                        <div class="info-card sidebar-card">
+                            <h3 class="card-title accent-blue">Visual examples</h3>
+                            <figure class="media-frame compact-frame">
+                                <img src="../pictures/Korea.jpg" alt="Representative landscape of South Korea">
+                            </figure>
+                            <ul class="sidebar-list">
+                                <li>Historic architecture beside contemporary skyscrapers.</li>
+                                <li>Fashion, food, and entertainment with international impact.</li>
+                                <li>Clean, dynamic, and highly connected urban design.</li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="row g-4">
+                    <div class="col-sm-5">
+                        <div class="info-card audio-card">
+                            <p class="section-label">Music</p>
+                            <h3>Playlist</h3>
+                            <p>
+                                A Seoul-inspired song to accompany the experience of the page.
+                            </p>
+                            <audio src="../songs/JENNIE - Seoul City (Official Video).mp3" controls preload="none"></audio>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-7">
+                        <div class="info-card">
+                            <h3 class="card-title accent-blue">Global influence</h3>
+                            <p>
+                                The Korean Wave has turned South Korea into a worldwide reference in entertainment,
+                                technology, beauty, automotive design, and education. The combination of cultural identity
+                                and industrial development is one of the reasons the country has such a strong international presence.
+                            </p>
+                            <p>
+                                This version of the page keeps the information in English while presenting it with centered
+                                navigation, more consistent buttons, and a clearer visual structure.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-<br>
-            <div class="row">
-                <div class="col-sm-9">
-                    <h3 style="border: 2px solid plum;">Culture</h3>
-                    <p align="justify">
-                        South Korea preserves a rich cultural heritage that includes traditional dance, clothing, and ceremonies, many of which are still performed today
-                         at festivals and cultural events. These traditions highlight the country’s deep history and artistic expression. <br>
-                        - Traditional Clothing (Hanbok):The hanbok is Korea’s traditional dress, known for its vibrant colors, flowing lines, and elegant design. 
-                        It is worn during holidays, weddings, and cultural celebrations. <br><br>
-                        - Dance & Performance:<br>
-                        * Fan Dance (Buchaechum): Dancers use large fans painted with flowers, creating graceful patterns.<br>
-                        * Mask Dance (Talchum): A mix of drama, dance, and satire, often performed with colorful masks.<br>
-                        * Drum Dance (Samgomu): Dancers play drums arranged in a circle, combining rhythm and movement.<br><br>
-                        - Music: Traditional instruments like the gayageum (zither), janggu (hourglass drum), and haegeum (two-string fiddle) accompany dances and 
-                        ceremonies.<br><br>
-                        - Festivals & Customs:<br>
-                        * Seollal (Lunar New Year): Families wear hanbok, perform ancestral rites, and play folk games.<br>
-                        * Chuseok (Harvest Festival): A time for family gatherings, traditional food, and honoring ancestors.<br>
-                        South Korea’s cultural identity is therefore a fusion of elegance and symbolism: the hanbok represents harmony and beauty, while dances 
-                        and music embody storytelling and community spirit. These traditions continue to thrive alongside modern K-pop and cinema, making Korean 
-                        culture both timeless and globally influential.
-                    </p>
-                </div>
-<br>
-                <div class="col-sm-3">
-                    <h3 style="border: 2px solid blue;">Examples</h3>
-                    <div class="row">
-                            <br>
-                            <img src="../pictures/Seoul.jpg" width="200" height="100" alt="Boton">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
+            </section>
+        </main>
 
         <footer class="footer">
-            freyes957605@itla.mx
+            <p>Contact: <a href="mailto:freyes957605@itla.mx">freyes957605@itla.mx</a></p>
         </footer>
     </div>
 </body>
