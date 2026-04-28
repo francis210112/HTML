@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/estructura.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title>audio</title>
+</head>
+<body><br>
+    <script>
+        function cambiarTrack(track){
+            var value = track.getAttribute("value")
+            viejo_audio = document.getElementById("reproductor")
+            audio_padre = viejo_audio.parentNode
+            audio_padre.removeChild(viejo_audio)
+            nuevo_audio = document.createElement("audio")
+            nuevo_audio.setAttribute("id","reproductor")
+            nuevo_audio.setAttribute("controls","controls")
+            nuevo_audio.setAttribute("autoplay","autoplay")
+            source = document.createElement("source")
+            source.setAttribute("src",value)
+            source.setAttribute("type","audio/mpeg")
+            source.setAttribute("id","reproductorSource")
+            nuevo_audio.appendChild(source)
+            padre = document.getElementById("reproductorBox")
+            padre.appendChild(nuevo_audio)
+        }
+        function cargarReproductor(){
+            var select = document.getElementById("selectTrack")
+            var value = select.options[0].getAttribute("value")
+            nuevo_audio = document.createElement("audio")
+            nuevo_audio.setAttribute("id","reproductor")
+            nuevo_audio.setAttribute("controls","controls")
+            source = document.createElement("source")
+            source.setAttribute("src",value)
+            source.setAttribute("type","audio/mpeg")
+            source.setAttribute("id","reproductor")
+            nuevo_audio.appendChild(source)
+            padre = document.getElementById("reproductorBox")
+            padre.appendChild(nuevo_audio)
+        }
+    </script>
+    <div class="container">
+        <div class="header">
+            <div class="row">
+                <div class="col-sm-5">
+                    <center>Prof. Villanueva</center>
+                </div>
+                <div class="col-sm-5">
+                    <center>Diseño páginas Web</center>
+                </div>
+                <div class="col-sm-2">
+                    <center><img src="../imagenes/ital.png" width="110" height="40"></center>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="nav">
+                <ul class="nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Multimedia</a>
+                        <ul>
+                            <li><a href="#">Audio</a></li>
+                            <li><a href="#">Video</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Imágenes</a>
+                        <ul>
+                            <li><a href="#">Carrusel</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Información</a>
+                        <ul>
+                            <li><a href="#">Centros Acopio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Acerca de...</a>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col-sm-6"><br>
+                    <center>
+                        <h4>Audio con Lista de reproducción &#127911;</h4>
+                        <div id="reproductorBox"></div><br>
+                        <select id="selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+                            <option value="../audios/parsons.wav">Eye in the Sky - Alan Parsons Project</option>
+                            <option value="../audios/never.wav">Never be the same - Cristopher Cross</option>
+                            <option value="../audios/september.wav">September - Earth, Wind, Fire</option>
+                            <option value="../audios/universal.mp3">Universal Stereo - 107 FM</option>
+                        </select>
+                        <script>cargarReproductor();</script>
+                    </center>
+                </div>
+                <div class="col-sm-6"><br><br>
+                    <center>
+                        <img src="">
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p align="justify"><font color="white"></font></p>
+            Francisco Reyes Zuñiga
+        </div>
+    </div>
+</body>
+</html>
