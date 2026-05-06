@@ -1,113 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/estructura.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <meta charset="utf-8">
-    <title>audio</title>
+    <title>Audio y multimedia</title>
 </head>
-<body><br>
-    <script>
-        function cambiarTrack(track){
-            var value = track.getAttribute("value")
-            viejo_audio = document.getElementById("reproductor")
-            audio_padre = viejo_audio.parentNode
-            audio_padre.removeChild(viejo_audio)
-            nuevo_audio = document.createElement("audio")
-            nuevo_audio.setAttribute("id","reproductor")
-            nuevo_audio.setAttribute("controls","controls")
-            nuevo_audio.setAttribute("autoplay","autoplay")
-            source = document.createElement("source")
-            source.setAttribute("src",value)
-            source.setAttribute("type","audio/mpeg")
-            source.setAttribute("id","reproductorSource")
-            nuevo_audio.appendChild(source)
-            padre = document.getElementById("reproductorBox")
-            padre.appendChild(nuevo_audio)
-        }
-        function cargarReproductor(){
-            var select = document.getElementById("selectTrack")
-            var value = select.options[0].getAttribute("value")
-            nuevo_audio = document.createElement("audio")
-            nuevo_audio.setAttribute("id","reproductor")
-            nuevo_audio.setAttribute("controls","controls")
-            source = document.createElement("source")
-            source.setAttribute("src",value)
-            source.setAttribute("type","audio/mpeg")
-            source.setAttribute("id","reproductor")
-            nuevo_audio.appendChild(source)
-            padre = document.getElementById("reproductorBox")
-            padre.appendChild(nuevo_audio)
-        }
-    </script>
-    <div class="container">
-        <div class="header">
-            <div class="row">
-                <div class="col-sm-5">
-                    <center>Francisco Reyes Zuñiga</center>
+<body>
+    <div class="container page-shell">
+        <header class="hero">
+            <div style="display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+                <div>
+                    <p class="eyebrow">Audio y cultura</p>
+                    <h1>Multimedia conectada</h1>
+                    <p class="hero-text">Reproductor, videos e imágenes.</p>
                 </div>
-                <div class="col-sm-5">
-                    <center>Diseño páginas Web</center>
-                </div>
-                <div class="col-sm-2">
-                    <center><img src="../pictures/Korea.jpg" width="110" height="40"></center>
-                </div>
+                <img src="../pictures/Spotify.png" alt="Spotify logo" style="max-width:160px; height:auto; border-radius:18px; box-shadow:0 12px 30px rgba(0,0,0,0.16);">
             </div>
-        </div>
-        <div class="menu">
-            <div class="nav">
-                <ul class="nav">
-                    <li><a href="../html/index.html">Inicio</a></li>
-                    <li><a href="#">Multimedia</a>
-                        <ul>
-                            <li><a href="#">Audio</a></li>
-                            <li><a href="#">Video</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Imágenes</a>
-                        <ul>
-                            <li><a href="#">Carrusel</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Información</a>
-                        <ul>
-                            <li><a href="#">Centros Acopio</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Acerca de...</a>
-                        <ul>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="section">
-            <div class="row">
-                <div class="col-sm-6"><br>
-                    <center>
-                        <h4>Audio con Lista de reproducción &#127911;</h4>
-                        <div id="reproductorBox"></div><br>
-                        <select id="selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
-                            <option value="../songs/cancion 3.mp3">Eye in the Sky - Alan Parsons Project</option>
-                            <option value="../songs/cancion 2.mp3">Never be the same - Cristopher Cross</option>
-                            <option value="../songs/cancion.mp3">September - Earth, Wind, Fire</option>
-                        </select>
-                        <script>cargarReproductor();</script>
-                    </center>
+        </header>
+
+        <nav class="menu" aria-label="Main navigation">
+            <ul class="main-nav">
+                <li class="nav-item"><a href="index.html">Inicio</a></li>
+                <li class="nav-item">
+                    <a href="#">Multimedia</a>
+                    <ul class="submenu">
+                        <li><a href="audio.html">Audio</a></li>
+                        <li><a href="video.html">Video</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="imagenes.html">Carrusel</a></li>
+                <li class="nav-item"><a href="informacion.html">Información</a></li>
+                <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="section-label">Multimedia</p>
+                    <h2>Audio player</h2>
                 </div>
-                <div class="col-sm-6"><br><br>
-                    <center>
-                        <img src="../pictures/Korea.jpg" width="110" height="40">
-                    </center>
+
+                <div class="row g-4">
+                    <article class="col-lg-8">
+                        <div class="info-card audio-card">
+                            <h3>Reproductor de audio</h3>
+                            <div id="audioPlayer"></div>
+                            <label for="selectTrack" class="form-label" style="margin-top:18px;color:#ffffff;display:block;">Elegir canción</label>
+                            <select id="selectTrack" class="form-select"></select>
+                        </div>
+                    </article>
+                    <article class="col-lg-4">
+                        <div class="info-card">
+                             <img src="../pictures/IVEGIF.gif" width="300" height="200">
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
-        <div class="footer">
-            <p align="justify"><font color="white"></font></p>
-            Francisco Reyes Zuñiga
-        </div>
+
+                <div class="page-actions">
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html">Anterior</a>
+                    <a href="video.html">Siguiente</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Volver a <a href="index.html">Inicio</a> | Contacto: <a href="mailto:freyes957605@itla.mx">freyes957605@itla.mx</a></p>
+        </footer>
     </div>
+
+    <script src="../js/audio.js" defer></script>
 </body>
 </html>

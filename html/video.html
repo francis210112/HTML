@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/estructura.css">
+    <title>Video</title>
+</head>
+<body>
+    <div class="container page-shell">
+        <header class="hero">
+            <p class="eyebrow">Video</p>
+            <h1>Galería de videos</h1>
+            <p class="hero-text">Explora videos que acompañan la experiencia multimedia de la página.</p>
+        </header>
+
+        <main>
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="section-label">Video</p>
+                    <h2>Video carousel</h2>
+                </div>
+
+                <div class="info-card">
+                    <p>Use the controls below to navigate between the available videos.</p>
+                    <video id="carouselVideo" controls preload="metadata">
+                        <source id="carouselVideoSource" src="" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>
+                    <div class="carousel-controls">
+                        <button class="btn btn-secondary" id="prevVideo" type="button">Anterior</button>
+                        <button class="btn btn-secondary" id="nextVideo" type="button">Siguiente</button>
+                    </div>
+                    <p id="videoCaption" class="lead-text" style="margin-top:14px;"></p>
+                </div>
+
+                <div class="page-actions">
+                    <a href="index.html">Inicio</a>
+                    <a href="audio.html">Anterior</a>
+                    <a href="imagenes.html">Siguiente</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Volver a <a href="index.html">Inicio</a> | Contacto: <a href="mailto:freyes957605@itla.mx">freyes957605@itla.mx</a></p>
+        </footer>
+    </div>
+
+    <script src="../js/audio.js" defer></script>
+</body>
+</html>

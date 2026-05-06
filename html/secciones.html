@@ -1,70 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/estructura.css">
-    <title>Estructura</title>
+    <title>Secciones</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container page-shell">
+        <header class="hero">
+            <p class="eyebrow">Secciones</p>
+            <h1>Trabajo académico</h1>
+            <p class="hero-text">Contenido de IoT y domótica presentado con el mismo estilo moderno del sitio.</p>
+        </header>
 
-        <div class="header">
-            Propedeutico Físico-matematico
-        </div>
+        <nav class="menu" aria-label="Navegación de secciones">
+            <ul class="main-nav">
+                <li class="nav-item"><a href="index.html" class="menu-link menu-link--tech">Inicio</a></li>
+                <li class="nav-item"><a href="audio.html" class="menu-link menu-link--business">Audio</a></li>
+                <li class="nav-item"><a href="#" class="menu-link menu-link--brands">Secciones</a></li>
+            </ul>
+        </nav>
 
-        <div class="menu">
-            <button type="button" class="btn btn-primary">Boton 1</button>
-            <button type="button" class="btn btn-warning">Boton 2</button>
-            <button type="button" class="btn btn-danger">Boton 3</button>
-        </div>
-
-        <div class="section">
-            <h1>Area de trabajo</h1>
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3 style="border: 2px solid plum;">Internet de las cosas</h3>
-                    <p align="justify">
-                    <b>El internet de las cosas</b>, surge a raiz de los primeros protocolos de seguridad 
-                    establecidos camaras de video vigilancia, posteriormente, se hace uso de los 
-                    asistentes como Alexa y el asistente de Google. <br>
-                    <b>Este concepto </b> llevo directamente a la indurstria donde se le llamo internet
-                    de las cosas industrial (IIoT), las empresas mas representativas de esta tecnologia
-                    son: industria refresquera, ensambladora de autos, empresas de paqueteria, y algunas
-                    totalmente automatizadas como SuCarne, donde todo el proceso se realiza sin la
-                    intervencion de personas.
-                    </p>
+        <main>
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="section-label">Área de trabajo</p>
+                    <h2>Internet de las cosas y domótica</h2>
                 </div>
-                <div class="col-sm-6">
-                    <h3 style="border: 2px solid blue;">Domotica</h3>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <br>
-                            <img src="../pictures/Boton.jpg" width="200" height="100">
-                        </div>
-                        <div class="col-sm-6">
-                            <p align="justify">
-                                Es la automatizaion y control en una casa habitacion, que cuenta con
-                                dispositivos, lo que permite en una mejor calidad de vida, reduce trabajo
-                                domestico, bienestar, seguridad y raxionaliza el consumo energetico.
-                                <br>
-                                Permite gestionar: Iluminacion, clima, aprovechamiento del agua (cisterna - tinaco)
-                                riego y electrodomesticos.
-                                <br>
-                                La carrera de la inginieria civil tiene una importante aportacion a este respecto 
-                                con lo que se denomina casas inteligentes o fraccionamientos inteligentes.
+
+                <div class="row g-4">
+                    <article class="col-lg-6">
+                        <div class="info-card">
+                            <h3 class="card-title accent-red">Internet de las cosas</h3>
+                            <p>
+                                <strong>El Internet de las cosas</strong> nace de los primeros protocolos de seguridad y las cámaras de vigilancia.
+                                Hoy se aplica en empresas refresqueras, ensambladoras de autos, paquetería y sistemas industriales automatizados.
+                            </p>
+                            <p>
+                                Las soluciones IoT permiten recopilar datos, automatizar procesos y mejorar la eficiencia sin necesidad de intervención continua.
                             </p>
                         </div>
-                    </div>
+                    </article>
+                    <article class="col-lg-6">
+                        <div class="info-card">
+                            <h3 class="card-title accent-blue">Domótica</h3>
+                            <p>
+                                La domótica controla iluminación, clima, consumo de agua y electrodomésticos en una vivienda.
+                                Mejora la calidad de vida, la seguridad y reduce el trabajo doméstico.
+                            </p>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <figure class="media-frame compact-frame">
+                                        <img src="../pictures/Boton.jpg" alt="Botón domótico" />
+                                    </figure>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>
+                                        El uso de sensores y controles inteligentes permite crear casas y fraccionamientos más eficientes,
+                                        confortables y sostenibles.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
 
-        <div class="footer">
-            alumno@itla.mx
-        </div>
-
+        <footer class="footer">
+            <p>Contacto: alumno@itla.mx</p>
+        </footer>
     </div>
 </body>
 </html>
